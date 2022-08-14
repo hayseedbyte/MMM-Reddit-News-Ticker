@@ -1,0 +1,29 @@
+.hwrap {
+  overflow: hidden;
+  background: black;
+  color: white;
+}
+
+.wrapper {
+  overflow: hidden;
+  color: white;
+}
+
+.hitem {
+  white-space: nowrap;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+}
+
+@keyframes tickerh {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-3500%, 0, 0);
+  }
+}
