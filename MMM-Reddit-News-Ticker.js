@@ -1,5 +1,3 @@
-/* eslint-disable indent */
-/* eslint-disable prettier/prettier */
 Module.register('MMM-Reddit-News-Ticker', {
   defaults: {
     updateInterval: 9000000, // 2.5 hours
