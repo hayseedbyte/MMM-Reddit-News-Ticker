@@ -8,10 +8,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 cwd = os.getcwd()
 t = time.ctime()
-print(time.localtime())
-print(time.ctime())
 titleFile = cwd + "\\titles.js"
-print(titleFile)
 
 
 def pull_news(cid, cs):
@@ -23,8 +20,7 @@ def pull_news(cid, cs):
     f = open(titleFile, "w")
     f.write(time.ctime() + '~')
     f.close()
-    print("getting submissions from reddit")
-    for submission in reddit.subreddit('news').top(limit=50):
+    for submission in reddit.subreddit('news').top(limit=50, time_filter="day"):
         title = submission.title
         atitle = title.replace("\"", "\'")
         btitle = atitle.replace("‘", "\'")
