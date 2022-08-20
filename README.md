@@ -28,6 +28,6 @@ var config = {
 
 | Option      | Description                                  |
 | ----------- | -------------------------------------------- |
-| `client_id` | _Required_ Your reddit API client id Address |
+| `client_id` | _Required_ Your reddit API client id  |
 | `secret`    | _Required_ Your reddit API secret          |
 |             |
