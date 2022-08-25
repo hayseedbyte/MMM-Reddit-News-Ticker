@@ -2,7 +2,5 @@
 .eslintrc.json
 .stylelintrc
 *.ini
-reddit-news-json.py
 titles.js
-.gitignore
 config.js
