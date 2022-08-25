@@ -15,7 +15,6 @@ var config = {
       module: 'MMM-Reddit-News-Ticker',
       position: 'bottom_bar'
       config: {
-        // See below for configurable options
         client_id: 'XXXXXXXXXXXXXXXXXXXX'
         secret: 'XXXXXXXXXXXXXXXXXXXXX'
       },
@@ -26,8 +25,8 @@ var config = {
 
 ## Configuration options
 
-| Option      | Description                                  |
-| ----------- | -------------------------------------------- |
-| `client_id` | _Required_ Your reddit API client id  |
-| `secret`    | _Required_ Your reddit API secret          |
+| Option      | Description                          |
+| ----------- | ------------------------------------ |
+| `client_id` | _Required_ Your reddit API client id |
+| `secret`    | _Required_ Your reddit API secret    |
 |             |

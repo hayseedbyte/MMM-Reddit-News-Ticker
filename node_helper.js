@@ -1,10 +1,11 @@
 var NodeHelper = require('node_helper');
 const cp = require('child_process');
+
 module.exports = NodeHelper.create({
   socketNotificationReceived: function (notification, payload) {
     if (notification === 'PULL_NEWS') {
       const execOptions = {
-        cwd: '/home/pi/MagicMirror/modules/MMM-Reddit-News-Ticker/',
+        cwd: '/MagicMirror/modules/MMM-Reddit-News-Ticker/',
         env: null,
         encoding: 'utf8',
         timeout: 0,
@@ -12,10 +13,12 @@ module.exports = NodeHelper.create({
       const id = payload[0];
       const secret = payload[1];
       const out = cp.exec(
-        `/usr/bin/python3 /home/pi/MagicMirror/modules/MMM-Reddit-News-Ticker/reddit-news-str.py ${id} ${secret}`,
+        `/usr/bin/python3 /reddit-news-str.py ${id} ${secret}`,
         execOptions,
         (err, stdout, stderr) => {
           this.sendSocketNotification('TITLES', stdout);
+          console.log(err);
+          console.log(stderr);
         }
       );
     }
