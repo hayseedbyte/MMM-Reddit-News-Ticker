@@ -2,7 +2,7 @@
 
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/).
 
-![screenshot](screenshot1.png)
+![screenshot](images\screenshot1.png)
 
 ## Using the module
 
@@ -10,7 +10,7 @@ Requires [python3](https://www.python.org/downloads/).
 
 You will need to get your own [client ID and secret](https://www.reddit.com/prefs/apps) from reddit.
 
-![reddit api](reddit-api.png)
+![reddit api](images\reddit-api.png)
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
 
