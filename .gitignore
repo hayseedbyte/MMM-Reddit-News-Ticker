@@ -1,6 +1,0 @@
-.vscode
-.eslintrc.json
-.stylelintrc
-*.ini
-reddit-news-json.py
-titles.js
