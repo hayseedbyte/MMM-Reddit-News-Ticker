@@ -2,6 +2,8 @@
 
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/).
 
+Looks and acts like the horizontally scrolling newsticker from CNN. By pulling the _top_ 50 submission titles from reddit.com/r/news, it avoids pulling clickbait article titles that don't impart any facts, leveraging the fact that redditors tend to downvote clickbait or sensationalist stories.
+
 ![screenshot](/images/screenshot1.png)
 
 ## Using the module
