@@ -1,4 +1,5 @@
-from encodings import utf_8
+
+# from encodings import utf_8
 import praw
 import time
 import os
@@ -23,12 +24,14 @@ def pull_news(cid, cs):
     # top 50 posts for the day
     for submission in reddit.subreddit('news').hot(limit=50):
         title = submission.title
+        # remove troublesome characters
         atitle = title.replace("\"", "\'")
         btitle = atitle.replace("‘", "\'")
         ctitle = btitle.replace("’", "\'")
+        dtitle = ctitle.replace("—", "-")
         f = open(titleFile, "a")
         # add ~ between each title so we can replace it later (it is unlikely to be in a title)
-        f.write(ctitle + " ~ ")
+        f.write(dtitle + " ~ ")
         f.close()
     f = open(titleFile, "r")
     x = f.read()
@@ -45,5 +48,6 @@ def pull_news(cid, cs):
     sys.exit(0)
 
 
+# allow script to be run with arguments by node_helper.js
 if __name__ == "__main__":
     pull_news(str(sys.argv[1]), str(sys.argv[2]))
