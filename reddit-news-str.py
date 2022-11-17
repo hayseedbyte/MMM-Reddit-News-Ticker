@@ -28,6 +28,7 @@ def pull_news(cid, cs):
         atitle = title.replace("\"", "\'")
         btitle = atitle.replace("‘", "\'")
         ctitle = btitle.replace("’", "\'")
+        #  what the hell is an emdash anyway
         dtitle = ctitle.replace("—", "-")
         f = open(titleFile, "a")
         # add ~ between each title so we can replace it later (it is unlikely to be in a title)

@@ -4,3 +4,4 @@
 *.ini
 titles.js
 config.js
+.gitignore
