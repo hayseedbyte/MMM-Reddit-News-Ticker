@@ -1,5 +1,4 @@
-
-# from encodings import utf_8
+#!/usr/bin/env python3
 import praw
 import time
 import os

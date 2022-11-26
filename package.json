@@ -10,10 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/hayseedbyte/MMM-Reddit-News-Ticker.git"
   },
-  "author": "",
+  "author": "Clinton Thomas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hayseedbyte/MMM-Reddit-News-Ticker/issues"
   },
-  "homepage": "https://github.com/hayseedbyte/MMM-Reddit-News-Ticker#readme"
+  "homepage": "https://github.com/hayseedbyte/MMM-Reddit-News-Ticker#readme",
+  "keywords": [
+    "news",
+    "ticker",
+    "reddit"
+  ]
 }
