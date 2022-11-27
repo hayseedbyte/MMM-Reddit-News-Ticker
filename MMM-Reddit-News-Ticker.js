@@ -1,6 +1,6 @@
 Module.register('MMM-Reddit-News-Ticker', {
   defaults: {
-    updateInterval: 60000, // 2.5 hours
+    updateInterval: 8000000, // 2.25 hours
     retryDelay: 5000,
   },
 
