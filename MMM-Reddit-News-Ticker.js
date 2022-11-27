@@ -8,6 +8,7 @@ Module.register('MMM-Reddit-News-Ticker', {
 
   start: function () {
     var home = this;
+    var self = this;
     console.log(home.name + 'START');
     const id = home.config.client_id;
     const secret = home.config.secret;
